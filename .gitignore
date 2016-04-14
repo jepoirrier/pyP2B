@@ -1,0 +1,9 @@
+# ignore Mac rubbish
+.DS_Store
+
+# ignore Windows rubbish
+Thumbs.db
+
+# ignore VIM temp files
+*.swp
+*~
