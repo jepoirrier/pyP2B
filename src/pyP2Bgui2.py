@@ -22,6 +22,7 @@ WARNING: no check for duplicate references (just add the ref)
 TODO: all exception handling
 INFOS: http://www.poirrier.be/~jean-etienne/software/pyp2b/
 E-MAIL: jepoirrier@gmail.com
+With excellent support and addition from Michel Veret!
 
 To use under window type the comma d :
 chcp 65001
@@ -50,19 +51,19 @@ class App:
 
 
         valeur = StringVar()
-        
+
         frame = Frame(master)
         frame.pack()
 
         queryFrame = Frame(frame)
         queryFrame.pack(fill=X)
-        
+
         label = Label(queryFrame, text="PMID: ")
         label.pack(side=LEFT)
-        
+
         entry = Entry(queryFrame, textvariable=valeur, text='        ')
         entry.pack(side=LEFT)
-        
+
         okButton = Button(queryFrame, text="OK", command=saisie)
         okButton.pack(side=LEFT)
 

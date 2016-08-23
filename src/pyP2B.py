@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Retrieve PubMed reference from its PMID given as last argument
 Copyright (C) 2006-2007 Jean-Etienne Poirrier
@@ -17,9 +18,12 @@ WARNING: no check for duplicate references (just add the ref)
 TODO: all exception handling
 INFOS: http://www.poirrier.be/~jean-etienne/software/pyp2b/
 E-MAIL: jepoirrier@gmail.com
+With excellent support and additions from Michel Veret!
 """
 from pyP2Bclass import pyP2B
 import sys
 
 myref = pyP2B()
-print myref.getPubmedReference(sys.argv[len(sys.argv)-1])
+#print ("Searching for pubmedID {0}".format(sys.argv[len(sys.argv)-1]))
+
+print (myref.getPubmedReference(sys.argv[len(sys.argv)-1]))
