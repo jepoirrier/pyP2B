@@ -7,3 +7,6 @@ Thumbs.db
 # ignore VIM temp files
 *.swp
 *~
+
+# ignore Python pyc
+*.pyc
