@@ -72,7 +72,7 @@ class pyP2B:
         deftab = 2
         
         if (is_non_zero_file(tmpFileName) is False):
-            qsStart = "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?" +\
+            qsStart = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?" +\
                   "&db=pubmed&id="
             qsEnd = "&retmode=xml&rettype=medline"
 
